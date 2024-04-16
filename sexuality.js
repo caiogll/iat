@@ -1,4 +1,4 @@
-define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/iat8.js'], function(APIConstructor, iatExtension){
+define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualtrics/demosexuality0002.js'], function(APIConstructor, iatExtension){
 	var API = new APIConstructor();
 	
 	//Randomize which of the three possible stimulus sets we are going to use for the gay category
