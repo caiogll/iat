@@ -29,37 +29,31 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				borderColor: 'lightblue'
 			},
 			category1 : {
-				name : 'Black people', //Will appear in the data and in the default feedback message.
+				name : 'Gay people', //Will appear in the data and in the default feedback message.
 				title : {
-					media : {word : 'Black people'}, //Name of the category presented in the task.
+					media : {word : 'Gay people'}, //Name of the category presented in the task.
 					css : {color:'#336600','font-size':'1.8em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'Tyron'},
-					{word: 'Malik'},
-					{word: 'Terrell'},
-					{word: 'Jazmin'},
-					{word: 'Tiara'},
-					{word: 'Shanice'}
+					{word: 'Homosexual'},
+					{word: 'Gay'},
+					{word: 'Gay People'},
 				],
 				//Stimulus css (style)
 				stimulusCss : {color:'#336600','font-size':'2.3em'}
 			},
 			category2 :	{
-				name : 'White people', //Will appear in the data and in the default feedback message.
+				name : 'Straight people', //Will appear in the data and in the default feedback message.
 				title : {
-					media : {word : 'White people'}, //Name of the category presented in the task.
+					media : {word : 'Straight people'}, //Name of the category presented in the task.
 					css : {color:'#336600','font-size':'1.8em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'Jake'},
-					{word: 'Connor'},
-					{word: 'Bradley'},
-					{word: 'Allison'},
-					{word: 'Emma'},
-					{word: 'Emily'}
+					{word: 'Heterosexual'},
+					{word: 'Straight'},
+					{word: 'Straight People'},
 				],
 				//Stimulus css
 				stimulusCss : {color:'#336600','font-size':'2.3em'}
@@ -73,13 +67,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'laughter'},
-					{word: 'happy'},
-					{word: 'glorious'},
-					{word: 'joy'},
-					{word: 'wonderful'},
-					{word: 'peace'},
-					{word: 'pleasure'},
+					{word: 'laughter'}, {word: 'happy'}, {word: 'glorious'},
+					{word: 'joy'}, {word: 'wonderful'}, {word: 'peace'},
+					{word: 'pleasure'}, {word: 'friend'}, {word: 'cheer'},
+					{word: 'pleasure'}, {word: 'smile'}, {word: 'excellent'},
+					{word: 'glad'}, {word: 'pleasure'}, {word: 'beautiful'},
+					{word: 'pleasing'}, {word: 'lovely'}, {word: 'enjoy'},
+					{word: 'adore'}, {word: 'cheerful'}, {word: 'joyful'},
 					{word: 'love'}
 				],
 				//Stimulus css
