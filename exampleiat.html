@@ -30,7 +30,7 @@
 				document.body.appendChild(container);
                 
                 // Run your study (just set the correct URL)
-                minnoJS(canvas, 'mgr.js');
+                minnoJS(canvas, 'https://github.com/caiogll/iat/blob/b7fed4350442c2c161832e1e78e498c495177388/mgr.js');
                 
                 // We need to wait a few miliseconds for Qualtrics to register the value that we entered
                 minnoJS.onEnd = function () { setTimeout(proceed, 100); }
