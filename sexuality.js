@@ -136,7 +136,7 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/iat8.j
 		},
 		
         base_url : {//Where are your images at?
-            image : 'https://baranan.github.io/minno-tasks/studies/datapipe.iat.examples/demo.iats/sex.images/'
+            image : 'https://caiogll.github.io/iat/images/'
         },
         
 		isTouch : API.getGlobal().isTouch
