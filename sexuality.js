@@ -156,7 +156,7 @@ define(['pipAPI','https://caiogll.github.io/iat/iat.js','underscore'], function(
 			stimulusCss : {color:'#31940F','font-size':'2.3em'}
 		},
 		base_url : {//Where are your images at?
-			image : 'https://github.com/caiogll/iat/images/'
+			image : 'https://caiogll.github.io/iat/images/'
 		},
 		isTouch : API.getGlobal().isTouch
 	});
