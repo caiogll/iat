@@ -29,7 +29,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				borderColor: 'lightblue'
 			},
 			category1 : {
-				name : 'Black people', //Will appear in the data and in the default feedback message.
+				name : 'Gay people', //Will appear in the data and in the default feedback message.
 				title : {
 					media : {word : 'Gay people'}, //Name of the category presented in the task.
 					css : {color:'#336600','font-size':'1.8em'}, //Style of the category title.
@@ -47,7 +47,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				stimulusCss : {color:'#336600','font-size':'2.3em'}
 			},
 			category2 :	{
-				name : 'White people', //Will appear in the data and in the default feedback message.
+				name : 'Straight people', //Will appear in the data and in the default feedback message.
 				title : {
 					media : {word : 'Straight people'}, //Name of the category presented in the task.
 					css : {color:'#336600','font-size':'1.8em'}, //Style of the category title.
