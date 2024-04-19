@@ -34,7 +34,13 @@ define(['managerAPI',
 
   API.addSequence([
     {inherit: 'intro'},
-    {inherit: 'sexuality'},
+    {
+      mixer:'random',
+      data:[{
+        mixer: 'wrapper',
+        data:[{ inherit: 'sexualityiat'}]
+      }]
+    },
 		{inherit: 'uploading'},
     {inherit: 'lastpage'},
   ]);
