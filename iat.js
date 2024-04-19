@@ -2,7 +2,6 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 
 	/**
 	Created by: Yoav Bar-Anan (baranan@gmail.com). Modified by Elad
-	Based on iat8.js, updated by Elinor
 	 * @param  {Object} options Options that replace the defaults...
 	 * @return {Object}         PIP script
 	**/
@@ -29,16 +28,16 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				borderColor: 'lightblue'
 			},
 			category1 : {
-				name : 'Gay people', //Will appear in the data and in the default feedback message.
+				name : 'Gay People', //Will appear in the data and in the default feedback message.
 				title : {
-					media : {word : 'Gay people'}, //Name of the category presented in the task.
+					media : {word : 'gAY people'}, //Name of the category presented in the task.
 					css : {color:'#336600','font-size':'1.8em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{image: '05_gay.jpg'},
-					{image: '07_lesbian.jpg'},
-				],
+          {image: '05_gay.jpg'},
+          {image: '07_lesbian.jpg'}
+        ],
 				//Stimulus css (style)
 				stimulusCss : {color:'#336600','font-size':'2.3em'}
 			},
@@ -50,7 +49,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{image: '06_hetero.jpg'},
+				  {image: '06_hetero.jpg'},
 				],
 				//Stimulus css
 				stimulusCss : {color:'#336600','font-size':'2.3em'}
@@ -64,41 +63,41 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-				{word: global.posWords[0]},
-				{word: global.posWords[1]},
-				{word: global.posWords[2]},
-				{word: global.posWords[3]},
-				{word: global.posWords[4]},
-				{word: global.posWords[5]},
-				{word: global.posWords[6]},
-				{word: global.posWords[7]},
-				{word: global.posWords[8]},
-				{word: global.posWords[9]},
-				{word: global.posWords[10]},
-				{word: global.posWords[11]},
-				{word: global.posWords[12]},
-				{word: global.posWords[13]},
-				{word: global.posWords[14]},
-				{word: global.posWords[15]},
-				{word: global.posWords[16]},
-				{word: global.posWords[17]},
-				{word: global.posWords[18]},
-				{word: global.posWords[19]},
-				{word: global.posWords[20]},
-				{word: global.posWords[21]},
-				{word: global.posWords[22]},
-				{word: global.posWords[23]},
-				{word: global.posWords[24]},
-				{word: global.posWords[25]},
-				{word: global.posWords[26]},
-				{word: global.posWords[27]},
-				{word: global.posWords[28]},
-				{word: global.posWords[29]},
-				{word: global.posWords[30]},
-				{word: global.posWords[31]},
-				{word: global.posWords[32]},
-				{word: global.posWords[33]},
-				{word: global.posWords[34]},
+          {word: 'laughter'},
+          {word: 'happy'},
+          {word: 'glorious'},
+          {word: 'joy'},
+          {word: 'wonderful'},
+          {word: 'peace'},
+          {word: 'pleasure'},
+          {word: 'love'},
+          {word: 'cheer'},
+          {word: 'friend'},
+          {word: 'adore'},
+          {word: 'cheerful'},
+          {word: 'joyful'},
+          {word: 'cherish'},
+          {word: 'smiling'},
+          {word: 'glad'},
+          {word: 'excellent'},
+          {word: 'joyous'},
+          {word: 'spectacular'},
+          {word: 'appealing'},
+          {word: 'delight'},
+          {word: 'excitement'},
+          {word: 'attractive'},
+          {word: 'delightful'},
+          {word: 'laughing'},
+          {word: 'fabulous'},
+          {word: 'pleasing'},
+          {word: 'beautiful'},
+          {word: 'fantastic'},
+          {word: 'lovely'},
+          {word: 'terrific'},
+          {word: 'celebrate'},
+          {word: 'enjoy'},
+          {word: 'magnificent'},
+          {word: 'triumph'}, 
 				],
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
@@ -112,14 +111,14 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: global.negWords[0]},
-					{word: global.negWords[1]},
-					{word: global.negWords[2]},
-					{word: global.negWords[3]},
-					{word: global.negWords[4]},
-					{word: global.negWords[5]},
-					{word: global.negWords[6]},
-					{word: global.negWords[7]},
+          {word: 'awful'},
+          {word: 'failure'},
+          {word: 'agony'},
+          {word: 'hurt'},
+          {word: 'horrible'},
+          {word: 'terrible'},
+          {word: 'nasty'},
+          {word: 'evil'},
 				],
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
@@ -155,11 +154,11 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			//Show a reminder what to do on error, throughout the task
 			remindError : true,
 
-			remindErrorText : '<p align="center" style="font-size:1em; font-family:arial; color:#000000">' +
+			remindErrorText : '<p align="center" style="font-size:"0.6em"; font-family:arial">' +
 			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
 			'Press the other key to continue.<p/>',
 
-			remindErrorTextTouch : '<p align="center" style="font-size:1.4em; font-family:arial; color:#000000">' +
+			remindErrorTextTouch : '<p align="center" style="font-size:"1.4em"; font-family:arial">' +
 			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
 			'Touch the other side to continue.<p/>',
 
@@ -169,8 +168,6 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 
 			fontColor : '#000000', //The default color used for printed messages.
 			
-			leftKey : 'e', 
-			rightKey: 'i',
 			//Text and style for key instructions displayed about the category labels.
 			leftKeyText : 'Press "E" for', 
 			rightKeyText : 'Press "I" for', 
@@ -332,14 +329,10 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			//attribute1, and attribute2 will be replaced with the name of attribute1 and attribute2.
 			//categoryA is the name of the category that is found to be associated with attribute1,
 			//and categoryB is the name of the category that is found to be associated with attribute2.
-			//fb_strong_Att1WithCatA_Att2WithCatB : 'Your responses suggested a strong automatic preference for categoryB over categoryA.',
-			//fb_moderate_Att1WithCatA_Att2WithCatB : 'Your responses suggested a moderate automatic preference for categoryB over categoryA.',
-			//fb_slight_Att1WithCatA_Att2WithCatB : 'Your responses suggested a slight automatic preference for categoryB over categoryA.',
-			//fb_equal_CatAvsCatB : 'Your responses suggested no automatic preference between categoryA and categoryB.',
-			fb_strong_Att1WithCatA_Att2WithCatB : "You were much faster at sorting 'categoryA' with 'attribute1' and 'categoryB' with 'attribute2' than 'categoryB' with 'attribute1' and 'categoryA' with 'attribute2'",
-			fb_moderate_Att1WithCatA_Att2WithCatB : "You were moderately faster at sorting 'categoryA' with 'attribute1' and 'categoryB' with 'attribute2' than 'categoryB' with 'attribute1' and 'categoryA' with 'attribute2'",
-			fb_slight_Att1WithCatA_Att2WithCatB : "You were slightly faster at sorting 'categoryA' with 'attribute1' and 'categoryB' with 'attribute2' than 'categoryB' with 'attribute1' and 'categoryA' with 'attribute2'",
-			fb_equal_CatAvsCatB : "You were about equally fast at sorting 'categoryA' with 'attribute1' and 'categoryB' with 'attribute2' and at sorting 'categoryB' with 'attribute1' and 'categoryA' with 'attribute2'.",
+			fb_strong_Att1WithCatA_Att2WithCatB : 'Your responses suggested a strong automatic preference for categoryB over categoryA.',
+			fb_moderate_Att1WithCatA_Att2WithCatB : 'Your responses suggested a moderate automatic preference for categoryB over categoryA.',
+			fb_slight_Att1WithCatA_Att2WithCatB : 'Your responses suggested a slight automatic preference for categoryB over categoryA.',
+			fb_equal_CatAvsCatB : 'Your responses suggested no automatic preference between categoryA and categoryB.',
 
 			//Error messages in the feedback
 			manyErrors: 'There were too many errors made to determine a result.',
@@ -380,8 +373,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		 * Create inputs
 		 */
 
-		var leftInput = !isTouch ? {handle:'left',on:'keypressed',key:piCurrent.leftKey} : {handle:'left',on:'click', stimHandle:'left'};
-		var rightInput = !isTouch ? {handle:'right',on:'keypressed',key:piCurrent.rightKey} : {handle:'right',on:'click', stimHandle:'right'};
+		var leftInput = !isTouch ? {handle:'left',on:'keypressed',key:'e'} : {handle:'left',on:'click', stimHandle:'left'};
+		var rightInput = !isTouch ? {handle:'right',on:'keypressed',key:'i'} : {handle:'right',on:'click', stimHandle:'right'};
 		var proceedInput = !isTouch ? {handle:'space',on:'space'} : {handle:'space',on:'bottomTouch', css:piCurrent.bottomTouchCss};
 
 		/**
@@ -729,8 +722,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			if (!params.isInst && params.remindError)
 			{
 				layout.push({
-					location: {bottom:1},
-					media: {html: isTouch ? params.remindErrorTextTouch : params.remindErrorText}
+					location:{bottom:1}, css: {color:piCurrent.fontColor,'font-size':'1em'},
+					media : {html: isTouch ? params.remindErrorTextTouch : params.remindErrorText}
 				});
 			}
 
@@ -1181,34 +1174,25 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		});
 
 		//Helper function to set the feedback messages.
-		function getFB(inText, categoryA, categoryB, att1, att2)
+		function getFB(inText, categoryA, categoryB)
 		{
-			var retText = inText.replace(/attribute1/g, att1);
-			retText = retText.replace(/attribute2/g, att2);
+			var retText = inText.replace(/attribute1/g, att1.name);
+			retText = retText.replace(/attribute2/g, att2.name);
 			retText = retText.replace(/categoryA/g, categoryA);
 			retText = retText.replace(/categoryB/g, categoryB);
 			return retText;
 		}
 
-        //Updated in May, 2023.
-        //Let's show in the feedback the title used in the actual IAT, unless it was not defined (e.g., it was an image)
-        //let cat1Name = cat1?.title?.word || cat1.name;
-        //let cat2Name = cat2?.title?.word || cat2.name;
-        let cat1Name = (cat1.title == null || cat1.title.media.word == null) ? cat1.name : cat1.title.media.word;
-        let cat2Name = (cat2.title == null || cat2.title.media.word == null) ? cat2.name : cat2.title.media.word;
-        let att1Name = (att1.title == null || att1.title.media.word == null) ? att1.name : att1.title.media.word;
-        let att2Name = (att2.title == null || att2.title.media.word == null) ? att2.name : att2.title.media.word;
 		//Set the feedback messages.
 		var messageDef = [
-				{ cut:'-0.65', message : getFB(piCurrent.fb_strong_Att1WithCatA_Att2WithCatB, cat1Name, cat2Name, att1Name, att2Name) },
-				{ cut:'-0.35', message : getFB(piCurrent.fb_moderate_Att1WithCatA_Att2WithCatB, cat1Name, cat2Name, att1Name, att2Name) },
-				{ cut:'-0.15', message : getFB(piCurrent.fb_slight_Att1WithCatA_Att2WithCatB, cat1Name, cat2Name, att1Name, att2Name) },
-				{ cut:'0.15', message : getFB(piCurrent.fb_equal_CatAvsCatB, cat1Name, cat2Name, att1Name, att2Name) },
-				{ cut:'0.35', message : getFB(piCurrent.fb_slight_Att1WithCatA_Att2WithCatB, cat2Name, cat1Name, att1Name, att2Name) },
-				{ cut:'0.65', message : getFB(piCurrent.fb_moderate_Att1WithCatA_Att2WithCatB, cat2Name, cat1Name, att1Name, att2Name) },
-				{ cut:'5', message : getFB(piCurrent.fb_strong_Att1WithCatA_Att2WithCatB, cat2Name, cat1Name, att1Name, att2Name) }
+				{ cut:'-0.65', message : getFB(piCurrent.fb_strong_Att1WithCatA_Att2WithCatB, cat1.name, cat2.name) },
+				{ cut:'-0.35', message : getFB(piCurrent.fb_moderate_Att1WithCatA_Att2WithCatB, cat1.name, cat2.name) },
+				{ cut:'-0.15', message : getFB(piCurrent.fb_slight_Att1WithCatA_Att2WithCatB, cat1.name, cat2.name) },
+				{ cut:'0.15', message : getFB(piCurrent.fb_equal_CatAvsCatB, cat1.name, cat2.name) },
+				{ cut:'0.35', message : getFB(piCurrent.fb_slight_Att1WithCatA_Att2WithCatB, cat2.name, cat1.name) },
+				{ cut:'0.65', message : getFB(piCurrent.fb_moderate_Att1WithCatA_Att2WithCatB, cat2.name, cat1.name) },
+				{ cut:'5', message : getFB(piCurrent.fb_strong_Att1WithCatA_Att2WithCatB, cat2.name, cat1.name) }
 		];
-
 		var scoreMessageObject = { MessageDef : messageDef };
 		if (piCurrent.manyErrors !== '')
 		{
@@ -1230,3 +1214,4 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 
 	return iatExtension;
 });
+
