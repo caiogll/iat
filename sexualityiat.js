@@ -36,9 +36,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'Gay'},
-					{word: 'Gay People'},
-					{word: 'Homosexual'},
+					{image: '05_gay.jpg'},
+					{image: '07_lesbian.jpg'},
 				],
 				//Stimulus css (style)
 				stimulusCss : {color:'#336600','font-size':'2.3em'}
@@ -51,9 +50,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'Straight'},
-					{word: 'Straight People'},
-					{word: 'Heterosexual'},
+					{image: '06_hetero.jpg'},
 				],
 				//Stimulus css
 				stimulusCss : {color:'#336600','font-size':'2.3em'}
@@ -67,41 +64,41 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'laughter'},
-					{word: 'happy'},
-					{word: 'glorious'},
-					{word: 'joy'},
-					{word: 'wonderful'},
-					{word: 'peace'},
-					{word: 'pleasure'},
-					{word: 'love'}
-					{word: 'cheer'}
-					{word: 'friend'}
-					{word: 'adore'}
-					{word: 'cheerful'}
-					{word: 'joyful'}
-					{word: 'cherish'}
-					{word: 'smiling'}
-					{word: 'glad'}
-					{word: 'excellent'}
-					{word: 'joyous'}
-					{word: 'spectacular'}
-					{word: 'appealing'}
-					{word: 'delight'}
-					{word: 'excitement'}
-					{word: 'attractive'}
-					{word: 'delightful'}
-					{word: 'laughing'}
-					{word: 'fabulous'}
-					{word: 'pleasing'}
-					{word: 'beautiful'}
-					{word: 'fantastic'}
-					{word: 'lovely'}
-					{word: 'terrific'}
-					{word: 'celebrate'}
-					{word: 'enjoy'}
-					{word: 'magnificent'}
-					{word: 'triumph'}
+				{word: global.posWords[0]},
+				{word: global.posWords[1]},
+				{word: global.posWords[2]},
+				{word: global.posWords[3]},
+				{word: global.posWords[4]},
+				{word: global.posWords[5]},
+				{word: global.posWords[6]},
+				{word: global.posWords[7]},
+				{word: global.posWords[8]},
+				{word: global.posWords[9]},
+				{word: global.posWords[10]},
+				{word: global.posWords[11]},
+				{word: global.posWords[12]},
+				{word: global.posWords[13]},
+				{word: global.posWords[14]},
+				{word: global.posWords[15]},
+				{word: global.posWords[16]},
+				{word: global.posWords[17]},
+				{word: global.posWords[18]},
+				{word: global.posWords[19]},
+				{word: global.posWords[20]},
+				{word: global.posWords[21]},
+				{word: global.posWords[22]},
+				{word: global.posWords[23]},
+				{word: global.posWords[24]},
+				{word: global.posWords[25]},
+				{word: global.posWords[26]},
+				{word: global.posWords[27]},
+				{word: global.posWords[28]},
+				{word: global.posWords[29]},
+				{word: global.posWords[30]},
+				{word: global.posWords[31]},
+				{word: global.posWords[32]},
+				{word: global.posWords[33]},
+				{word: global.posWords[34]},
 				],
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
@@ -115,14 +112,14 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'awful'},
-					{word: 'failure'},
-					{word: 'agony'},
-					{word: 'hurt'},
-					{word: 'horrible'},
-					{word: 'terrible'},
-					{word: 'nasty'},
-					{word: 'evil'}
+					{word: global.negWords[0]},
+					{word: global.negWords[1]},
+					{word: global.negWords[2]},
+					{word: global.negWords[3]},
+					{word: global.negWords[4]},
+					{word: global.negWords[5]},
+					{word: global.negWords[6]},
+					{word: global.negWords[7]},
 				],
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}

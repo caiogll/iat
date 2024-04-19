@@ -7,7 +7,7 @@ define(['managerAPI',
     //const urlParams = new URLSearchParams(queryString);
     //const pt = urlParams.get('pt');
 
-	var API    = new Manager();
+	var API = new Manager();
 	//const subid = Date.now().toString(16)+Math.floor(Math.random()*10000).toString(16);
 	init_data_pipe(API, 'of0fd6cZlvm1gJD3ilWqg56CoQEqFrcxHMrYtQh4A1UwzkSlApvRDR0TcYBHXlNpJa894E',  {file_type:'csv'});	
 
@@ -15,46 +15,48 @@ define(['managerAPI',
     API.addSettings('skip',true);
 
     //Randomly select which of two sets of category labels to use.
-    let raceSet = API.shuffle(['a','b'])[0];
-    let blackLabels = [];
-    let whiteLabels = [];
+    let sexualitySet = API.shuffle(['a','b', 'c'])[0];
+    let gayLabels = [];
+    let straightLabels = [];
 
-    if (raceSet == 'a') {
-        blackLabels.push('African Americans');
-        whiteLabels.push('European Americans');
+    if (sexualitySet == 'a') {
+        gayLabels.push('Gay');
+        straightLabels.push('Straight');
+    } else if(sexualitySet == 'b'){
+        gayLabels.push('Gay People');
+        straightLabels.push('Straight People');
     } else {
-        blackLabels.push('Black people');
-        whiteLabels.push('White people');
+        gayLabels.push('Homosexual');
+        straightLabels.push('Heterosexual');
     }
 
     API.addGlobal({
-        raceiat:{},
+        sexualityiat:{},
         //YBYB: change when copying back to the correct folder
-        baseURL: './images/',
-        raceSet:raceSet,
-        blackLabels:blackLabels,
-        whiteLabels:whiteLabels,
+        baseURL: '/images/',
+        sexualitySet:sexualitySet,
+        gayLabels:gayLabels,
+        straightLabels:straightLabels,
         //Select randomly what attribute words to see. 
         //Based on Axt, Feng, & Bar-Anan (2021).
         posWords : API.shuffle([
-            'Love', 'Cheer', 'Friend', 'Pleasure',
-            'Adore', 'Cheerful', 'Friendship', 'Joyful', 
-            'Smiling','Cherish', 'Excellent', 'Glad', 
-            'Joyous', 'Spectacular', 'Appealing', 'Delight', 
-            'Excitement', 'Laughing', 'Attractive','Delightful', 
-            'Fabulous', 'Glorious', 'Pleasing', 'Beautiful', 
-            'Fantastic', 'Happy', 'Lovely', 'Terrific', 
-            'Celebrate', 'Enjoy', 'Magnificent', 'Triumph'
+            'Laughter', 'Happy', 'Glorious',
+			'Joy', 'Wonderful', 'Peace',
+			'Pleasure', 'Love', 'Cheer',
+			'Friend', 'Adore', 'Cheerful',
+			'Joyful', 'Cherish', 'Smiling',
+			'Glad', 'Excellent', 'Joyous',
+			'Spectacular', 'Appealing', 'Delight',
+			'Excitement', 'Attractive', 'Delightful',
+			'Laughing', 'Fabulous', 'Pleasing',
+			'Beautiful', 'Fantastic', 'Lovely',
+			'Terrific', 'Celebrate', 'Enjoy',
+			'Magnificent', 'Triumph',
         ]), 
         negWords : API.shuffle([
-            'Abuse', 'Grief', 'Poison', 'Sadness', 
-            'Pain', 'Despise', 'Failure', 'Nasty', 
-            'Angry', 'Detest', 'Horrible', 'Negative', 
-            'Ugly', 'Dirty', 'Gross', 'Evil', 
-            'Rotten','Annoy', 'Disaster', 'Horrific',  
-            'Scorn', 'Awful', 'Disgust', 'Hate', 
-            'Humiliate', 'Selfish', 'Tragic', 'Bothersome', 
-            'Hatred', 'Hurtful', 'Sickening', 'Yucky'
+            'Awful','Failure','Agony',
+            'Hurt','Horrible','Terrible',
+            'Nasty','Evil'
         ])
     });
 
@@ -72,24 +74,10 @@ define(['managerAPI',
             header: 'Welcome'
         }],
 
-        raceiat_instructions: [{
-            inherit: 'instructions',
-            name: 'raceiat_instructions',
-            templateUrl: 'raceiat_instructions.jst',
-            title: 'IAT Instructions',
-            header: 'Implicit Association Test'
-        }],
-
-        explicits: [{
-            type: 'quest',
-            name: 'explicits',
-            scriptUrl: 'explicits.js'
-        }],
-
-        raceiat: [{
+        sexualityiat: [{
             type: 'time',
-            name: 'raceiat',
-            scriptUrl: 'raceiat.js'
+            name: 'sexualityiat',
+            scriptUrl: 'sexualityiat.js'
         }],
 
         lastpage: [{
@@ -98,16 +86,16 @@ define(['managerAPI',
             templateUrl: 'lastpage.jst',
             title: 'End',
             //Uncomment the following if you want to end the study here.
-            //last:true, 
+            last:true, 
             header: 'You have completed the study'
         }], 
         
         //Use if you want to redirect the participants elsewhere at the end of the study
-        redirect:
-        [{ 
-			//Replace with any URL you need to put at the end of your study, or just remove this task from the sequence below
-            type:'redirect', name:'redirecting', url: 'https://www.google.com/search' 
-        }],
+        // redirect:
+        // [{ 
+		// 	//Replace with any URL you need to put at the end of your study, or just remove this task from the sequence below
+        //     type:'redirect', name:'redirecting', url: 'https://www.google.com/search' 
+        // }],
 		
 		//This task waits until the data are sent to the server.
         uploading: uploading_task({header: 'just a moment', body:'Please wait, sending data... '})
@@ -116,7 +104,7 @@ define(['managerAPI',
     API.addSequence([
         { type: 'isTouch' }, //Use Minno's internal touch detection mechanism. 
         
-        { type: 'post', path: ['$isTouch', 'raceSet', 'blackLabels', 'whiteLabels'] },
+        { type: 'post', path: ['$isTouch', 'sexualitySet', 'gayLabels', 'straightLabels'] },
 
         // apply touch only styles
         {
@@ -157,18 +145,10 @@ define(['managerAPI',
         {inherit: 'intro'},
         {
             mixer:'random',
-            data:[
-                {inherit: 'explicits'},
-
-                // force the instructions to preceed the iat
-                {
-                    mixer: 'wrapper',
-                    data: [
-                        {inherit: 'raceiat_instructions'},
-                        {inherit: 'raceiat'}
-                    ]
-                }
-            ]
+            data:[{
+                mixer: 'wrapper',
+                data:[{ inherit: 'sexualityiat'}]
+            }]
         },
 
 		{inherit: 'uploading'},
