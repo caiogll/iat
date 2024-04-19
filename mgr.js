@@ -1,7 +1,7 @@
 define(['managerAPI',
 		'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@1.*/datapipe.min.js'], function(Manager){
 
-	var API = new new Manager();
+	let API = new new Manager();
 	
   API.setName('mgr');
   API.addSettings('skip',true);
@@ -39,7 +39,7 @@ define(['managerAPI',
       mixer:'random',
       data:[{
         mixer: 'wrapper',
-        data:[{ inherit: 'sexualityiat'}]
+        data:[{ inherit: 'sexuality'}]
       }]
     },
 		{inherit: 'uploading'},
