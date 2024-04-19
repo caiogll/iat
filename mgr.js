@@ -8,7 +8,12 @@ define(['managerAPI',
   init_data_pipe(API, 'xOV3HDLlOM7i',  {file_type:'csv'});	
 
   API.addTasksSet({
+    instructions: [{
+      type: 'message',
+      buttonText: 'Continue'
+    }],
     intro: [{
+      inherit: 'instructions',
       name: 'intro',
       templateUrl: 'intro.jst',
       title: 'Intro',
