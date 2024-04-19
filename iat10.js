@@ -36,12 +36,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'Tyron'},
-					{word: 'Malik'},
-					{word: 'Terrell'},
-					{word: 'Jazmin'},
-					{word: 'Tiara'},
-					{word: 'Shanice'}
+					{word: 'Gay'},
+					{word: 'Gay People'},
+					{word: 'Homosexual'},
 				],
 				//Stimulus css (style)
 				stimulusCss : {color:'#336600','font-size':'2.3em'}
@@ -54,12 +51,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'Jake'},
-					{word: 'Connor'},
-					{word: 'Bradley'},
-					{word: 'Allison'},
-					{word: 'Emma'},
-					{word: 'Emily'}
+					{word: 'Straight'},
+					{word: 'Straight People'},
+					{word: 'Heterosexual'},
 				],
 				//Stimulus css
 				stimulusCss : {color:'#336600','font-size':'2.3em'}
@@ -81,6 +75,29 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					{word: 'peace'},
 					{word: 'pleasure'},
 					{word: 'love'}
+					{word: 'cheer'}
+					{word: 'friend'}
+					{word: 'adore'}
+					{word: 'cheerful'}
+					{word: 'joyful'}
+					{word: 'cherish'}
+					{word: 'smiling'}
+					{word: 'glad'}
+					{word: 'excellent'}
+					{word: 'joyous'}
+					{word: 'spectacular'}
+					{word: 'appealing'}
+					{word: 'delight'}
+					{word: 'excitement'}
+					{word: 'attractive'}
+					{word: 'delightful'}
+					{word: 'laughing'}
+					{word: 'fabulous'}
+					{word: 'pleasing'}
+					{word: 'beautiful'}
+					{word: 'fantastic'}
+					{word: 'lovely'}
+					{word: 'terrific'}
 				],
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
