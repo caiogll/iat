@@ -1,4 +1,4 @@
-define(['pipAPI','https://caiogll.github.io/iat/iat.js','underscore'], function(APIConstructor, iatExtension) {
+define(['pipAPI','https://caiogll.github.io/iat/iat.js'], function(APIConstructor, iatExtension) {
 
 	let API = new APIConstructor();
 	
