@@ -1,7 +1,7 @@
 define(['managerAPI',
 		'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@1.*/datapipe.min.js'], function(Manager){
 
-	let API = new new Manager();
+	let API = new Manager();
 	
   API.setName('mgr');
   API.addSettings('skip',true);
