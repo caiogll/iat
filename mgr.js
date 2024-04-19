@@ -9,7 +9,6 @@ define(['managerAPI',
 
   API.addTasksSet({
     intro: [{
-      inherit: 'instructions',
       name: 'intro',
       templateUrl: 'intro.jst',
       title: 'Intro',
@@ -35,7 +34,7 @@ define(['managerAPI',
 
   API.addSequence([
     {inherit: 'intro'},
-    { inherit: 'sexuality'},
+    {inherit: 'sexuality'},
 		{inherit: 'uploading'},
     {inherit: 'lastpage'},
   ]);
