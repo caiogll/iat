@@ -5,7 +5,7 @@ define(['managerAPI',
 	
   API.setName('mgr');
   API.addSettings('skip',true);
-  init_data_pipe(API, 'of0fd6cZlvm1gJD3ilWqg56CoQEqFrcxHMrYtQh4A1UwzkSlApvRDR0TcYBHXlNpJa894E',  {file_type:'csv'});	
+  init_data_pipe(API, 'xOV3HDLlOM7i',  {file_type:'csv'});	
 
   API.addTasksSet({
     intro: [{
