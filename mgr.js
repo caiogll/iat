@@ -38,7 +38,7 @@ define(['managerAPI',
       mixer:'random',
       data:[{
         mixer: 'wrapper',
-        data:[{ inherit: 'sexualityiat'}]
+        data:[{ inherit: 'sexuality'}]
       }]
     },
 		{inherit: 'uploading'},
