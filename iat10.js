@@ -98,6 +98,10 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					{word: 'fantastic'}
 					{word: 'lovely'}
 					{word: 'terrific'}
+					{word: 'celebrate'}
+					{word: 'enjoy'}
+					{word: 'magnificent'}
+					{word: 'triumph'}
 				],
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
